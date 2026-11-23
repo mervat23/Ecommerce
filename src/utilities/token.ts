@@ -17,7 +17,7 @@
 "use server"
 
 import { getServerSession } from "next-auth/next"
-import { authOptions } from "@/auth"
+import { authOptions } from "../../auth"
 
 export async function getMyToken() {
   const session = await getServerSession(authOptions)
